@@ -1,0 +1,60 @@
+{
+  "name": "@axolo/egg-tencent-cloud",
+  "version": "0.0.1",
+  "description": "Tencent Cloud SDK 4.x plugin for Egg.js.",
+  "eggPlugin": {
+    "name": "tencentCloud"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "egg-tencent-cloud",
+    "egg-tencent-cloud-cloud",
+    "tencent cloud",
+    "tencent cloud cloud"
+  ],
+  "files": [
+    "config",
+    "app.js",
+    "lib"
+  ],
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "autod": "autod"
+  },
+  "dependencies": {
+    "tencentcloud-sdk-nodejs": "^4.0.95"
+  },
+  "devDependencies": {
+    "autod": "^3.1.1",
+    "autod-egg": "^1.1.0",
+    "egg": "^2.29.3",
+    "egg-bin": "^4.15.0",
+    "egg-ci": "^1.18.0",
+    "egg-mock": "^4.1.0",
+    "eslint": "^7.24.0",
+    "eslint-config-egg": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "ci": {
+    "version": "8, 10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axolo/egg-tencent-cloud.git"
+  },
+  "bugs": {
+    "url": "https://github.com/axolo/egg-tencent-cloud/issues"
+  },
+  "homepage": "https://github.com/axolo/egg-tencent-cloud#readme",
+  "author": "Yueming Fang",
+  "license": "MIT"
+}
